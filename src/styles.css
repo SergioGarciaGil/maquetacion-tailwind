@@ -41,6 +41,7 @@
   }
 
   @layer components {
+    /* Estilos menu cabecera */
     .menu-item {
       @apply mr-5 
        ml-5
@@ -50,11 +51,63 @@
     }
 
     .menu-item-a {
-      @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125;
+      @apply block
+       transition duration-200 
+       hover:text-azul-claro 
+       transform 
+       hover:scale-125;
     }
     .text-banner {
+      /* Estilos banner */
       font-family: "BebasNeue";
       text-shadow: 2px 2px 1px black;
+    }
+    /* estilos menu tarjetas */
+    .card {
+      @apply group
+       flex-1
+        h-80
+        border-2
+        shadow-md
+        border-gray-200
+        bg-white
+        overflow-hidden
+        m-5
+        pl-5
+        pr-5
+        cursor-pointer
+        transition
+        duration-300
+        hover:bg-black;
+    }
+    .card-icon {
+      font-family: "WebSymbolsRegular";
+      @apply block
+      w-full
+      h-32
+      text-5xl
+      text-center
+      mt-12
+      mx-auto
+      transition
+      duration-300;
+    }
+    .card-category {
+      @apply w-full
+      h-12
+      text-xl
+      font-bold
+      text-center
+      text-azul-claro
+      transition
+      duration-300;
+    }
+    .card-description {
+      @apply text-center
+      text-azul-claro
+      text-base
+      transition
+      duration-300;
     }
   }
 }
