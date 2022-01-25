@@ -78,7 +78,14 @@
         cursor-pointer
         transition
         duration-300
-        hover:bg-black;
+        hover:bg-black
+        
+        xs:h-40
+        xs:m-2
+        md:h-40
+        md:m-2
+        lg:h-80
+        lg:m-5;
     }
     .card-icon {
       font-family: "WebSymbolsRegular";
@@ -91,7 +98,14 @@
       pt-5
       mx-auto
       transition
-      duration-300;
+      duration-300
+      
+      xs:h-20
+      xs:mt-3
+      md:mt-3
+      lg:mt-12
+      md:h-20
+      lg:h-32;
     }
     .card-category {
       @apply w-full
@@ -101,14 +115,29 @@
       text-center
       text-azul-claro
       transition
-      duration-300;
+      duration-300
+
+      xs:text-base
+      xs:h-6
+      md:text-base
+      lg:text-lg
+      md:h-6
+      lg:h-12;
     }
     .card-description {
       @apply text-center
       text-azul-claro
       text-base
       transition
-      duration-300;
+      duration-300
+
+      xs:hidden  
+      md:hidden
+      lg:block
+      lg:text-sm
+      lg:mt-1.5
+      xl:text-base
+      xl:mt-1;
     }
   }
 }
