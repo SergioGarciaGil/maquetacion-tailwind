@@ -53,7 +53,7 @@
     .menu-item-a {
       @apply block
        transition duration-200 
-       hover:text-azul-claro 
+       hover:text-azul-oscuro 
        transform 
        hover:scale-125;
     }
@@ -113,7 +113,7 @@
       text-xl
       font-bold
       text-center
-      text-azul-claro
+      text-azul-oscuro
       transition
       duration-300
 
@@ -126,7 +126,7 @@
     }
     .card-description {
       @apply text-center
-      text-azul-claro
+      text-azul-oscuro
       text-base
       transition
       duration-300
@@ -174,10 +174,71 @@
       @apply block text-2xl m-1;
     }
     .article-head a {
-      @apply font-semibold text-azul-claro hover:underline;
+      @apply font-semibold text-azul-oscuro hover:underline;
     }
     .article-description {
       @apply block mt-3 mb-3 text-base font-sans font-normal;
+    }
+    .aside-header {
+      font-family: "BebasNeue";
+      background: url("../img/pxgray.png"), white;
+      @apply block
+        h-11
+        leading-10
+        
+        text-3xl
+        font-medium
+        tracking-widest
+        pl-3.5
+        pt-1
+        
+        mb-3.5
+        border
+        shadow-header3D;
+    }
+    .aside-box {
+      @apply w-10/12
+        h-60
+        mt-5
+        mb-7
+        mx-auto
+        pt-1
+        bg-white
+        shadow-box;
+    }
+    .login-input {
+      @apply block mx-auto mt-5 w-10/12 h-8 border border-gray-300 shadow-inner pl-8 rounded-md text-gray-500 transition duration-300 outline-none focus:outline-none focus:text-gray-600;
+    }
+    .login-icon {
+      @apply symbol text-center absolute ml-7 mt-6 h-8;
+    }
+    .login-button {
+      @apply trebuchet
+            w-24
+            h-8
+            mt-5
+            ml-5
+            mb-5
+            text-center
+            text-white
+            text-base
+            border
+            border-azul-oscuro
+            rounded-none
+            cursor-pointer
+            font-light
+            bg-gradient-to-b from-azul-claro to-azul-oscuro
+            transition
+            duration-300
+            hover:shadow-md;
+    }
+    .login-link {
+      @apply ml-5
+      block
+      text-sm
+      text-gray-600
+      hover:underline 
+      hover:text-azul-oscuro;
     }
   }
 }
