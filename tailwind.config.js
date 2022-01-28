@@ -29,6 +29,8 @@ module.exports = {
         "show-card-icon": "showCardIcon 300ms linear",
         "show-card-category": "showCardCategory 400ms linear",
         "show-card-description": "showCardDesc 400ms linear",
+        "social-right": "socialRight 400ms linear",
+        "social-face": "socialFace 400ms linear",
       },
       keyframes: {
         fromBellow: {
@@ -84,6 +86,20 @@ module.exports = {
             transform: "translateX(-300%)",
           },
           to: { transform: "translateX(0%)" },
+        },
+        socialRight: {
+          from: {
+            transform: "translateX(-200%)",
+          },
+          to: { transform: "translateX(0%)" },
+        },
+        socialFace: {
+          from: {
+            transform: "translateX(100%)",
+          },
+          to: {
+            transform: "translateX(0%)",
+          },
         },
       },
     },
