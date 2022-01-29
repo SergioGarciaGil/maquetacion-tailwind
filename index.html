@@ -66,7 +66,7 @@
       </div>
       <!-- FIN DEL BANNER -->
       <!-- INICIO TARJETAS -->
-      <div id="card" class="flex flex-nowrap justify-between">
+      <div id="card" class="flex flex-nowrap justify-between xs:place-items-center xs:flex flex-col md:flex-row">
         <div class="card">
           <span
             class="card-icon transform group-hover:scale-150 group-hover:text-azul-claro group-hover:animate-show-card-icon"
@@ -157,9 +157,9 @@
     </section>
     <!-- Fin Seccion informatica -->
     <!-- Inicio contenido principal -->
-    <main class="container w-11/12 flex flex-row mx-auto">
+    <main class="container w-11/12 mt-5 mx-auto flex flex-row xs:flex-col md:flex-row ">
       <!-- Inicio Barra lateral -->
-      <aside id="lateral" class="order-2 flex-none w-72 min-h-full">
+      <aside id="lateral" class="order-2 flex-none w-72 min-h-full xs:w-full">
         <h3 class="aside-header"
         >Buscar</h3>
         <div id="search" class="
@@ -176,6 +176,7 @@
           <form>
             <input type="text"class="
             w-10/12
+            
             h-6
             border-none
             pl-1
@@ -198,7 +199,7 @@
           </form>
         </div>
         <h3 class="aside-header">Login</h3>
-        <div  id="login"class="aside-box"
+        <div  id="login"class="aside-box">
           <form>
             <label for="email" class="login-icon ">U</label>
             <input type="email" id="email" class="login-input" />
@@ -212,6 +213,7 @@
             <a href="#" class="login-link">¿Aun no tienes cuenta?</a>
             <a href="#"class="login-link">¿Has olvidado tu contraseña?</a>
           </form>
+        
         </div>
         <h3 class="aside-header">Redes sociales</h3>
         <div id="social-media" class="aside-box h-48">
@@ -243,7 +245,7 @@
       </aside>
       <!-- Fin barra lateral -->
       <!-- Inicio Artículos -->
-      <section class="order-1 flex-grow mt-5 mr-10">
+      <section class="order-1 flex-grow mt-5 mr-10 xs:m-0">
         <h2 class="articles-header">Ultimos artículos</h2>
         <article
           class=" articles-items "
@@ -387,5 +389,95 @@
       <!-- Fin artículos -->
     </main>
     <!-- Fin contenido principal -->
+    <!-- Inicio Pie de página -->
+    <footer id="footer" class="
+    w-full
+    h-auto
+    bg-black
+    text-white
+    overflow-hidden
+    ">
+      <div class="
+      container
+      w-11/12
+      mx-auto
+      flex
+      flex-row
+      xs:flex-col
+      md:flex-col
+      lg:flex-row
+      ">
+        <div id="menu-footer" class="
+        footer-box
+        ">
+          <h5 class="footer-header
+          ">Menú</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li> <a href="#">Formación</a></li>
+            <li><a href="#">Contacto</a> </li>
+             
+              
+          </ul>
+        </div>
+        <div id="location "class="
+        footer-box
+        ">
+          <h5  class="footer-header
+          ">¿Donde estamos?</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0849457812797!2d-73.13208648662214!3d7.116154494861179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fd3f7e6ce27%3A0xcf2b72ddf35acbe7!2sGobernaci%C3%B3n%20De%20Santander!5e0!3m2!1ses!2sco!4v1643491456914!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          class="w-full
+          h-80
+          mt-3
+          border-4
+          border-gray-400
+          rounded-md
+          shadow-md
+          "
+          >
+          
+          </iframe>
+        </div>
+        <div id="info" class="
+        footer-box
+        ">
+         <h5 class="footer-header">Desarrollado con</h5>
+         <p class="mb-6
+         text-center
+         ">
+           <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" class="block mx-auto"/>
+         </p>
+         <h5 class="footer-header
+          ">Optimizado para</h5>
+         <div class="browsers flex flex-row space-x-6 mb-6">
+           <a href="#">
+           <img src="img/firefox-icon.png"/>
+         </a>
+         <a href="#">
+           <img src="img/chrome.png"/>
+         </a>
+         <a href="#">
+           <img src="img/Opera_256x256.png"/>
+         </a>
+         <a href="#">
+           <img src="img/safari.png"/>
+         </a>
+
+         <a href="#">
+           <img src="img/android.png"/>
+         </a>
+         <a href="#">
+           <img src="img/ios.png"/>
+         </a>
+         </div>
+         <h5 class="footer-header">Autor</h5>
+         <p>&copy; Sergio Garcia WEB - </p>
+
+        </div>
+
+      </div>
+
+    </footer>
   </body>
 </html>
