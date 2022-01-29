@@ -212,7 +212,7 @@
       @apply block mx-auto mt-5 w-10/12 h-8 border border-gray-300 shadow-inner pl-8 rounded-md text-gray-500 transition duration-300 outline-none focus:outline-none focus:text-gray-600;
     }
     .login-icon {
-      @apply symbol text-center absolute ml-7 mt-6 h-8;
+      @apply symbol text-center absolute ml-7 mt-1 h-8;
     }
     .login-button {
       @apply trebuchet
